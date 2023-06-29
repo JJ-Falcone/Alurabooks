@@ -134,18 +134,43 @@
         </div>
     </section>
 
+    <div class="div__topicos">
+        <section class="topicos">
+            <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item">Android</li>
+                <li class="topicos__item">Marketing Digital</li>
+                <li class="topicos__item">Agile</li>
+                <li class="topicos__item">Startups</li>
+                <li class="topicos__item">HTML & CSS</li>
+                <li class="topicos__item">Python</li>
+                <li class="topicos__item">OO</li>
+                <li class="topicos__item">Java</li>
+            </ul>
+        </section>
+    </div>
 
+    <section class="newsletter">
+        <h2 class="newsletter__titulo">Fique por dentro das novidades!</h2>
+        <p class="newsletter__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="newsletter__cadastro">
+            <div class="newsletter__cor">
+                <img src="img/mail_black_24dp 1.svg" alt="email">
+                <input type="email" class="newsletter__input" placeholder="Cadastre seu e-mail">
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <h2 class="footer__titulo">Grupo Alura</h2>
+    </footer>
 
-
-
-
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
         spaceBetween: 20,
+        loop: true,
         centeredSlides: true,
         slidesPerView: 2,
         pagination: {
@@ -155,4 +180,5 @@
         });
     </script>
 </body>
+
 </html>

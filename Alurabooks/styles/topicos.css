@@ -1,0 +1,41 @@
+.div__topicos{
+    padding: 1rem 0;
+    background: var(--branco);
+}
+
+.topicos{
+    background: var(--azul-degrade);
+    padding: 1.5rem 0;
+}
+
+.topicos__titulo{
+    color: var(--branco);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 0 0 1rem 0;
+}
+
+.topicos__lista{
+    padding: 0 0.5rem;
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.topicos__item{
+    padding: 1rem 1.5rem;
+    margin: 1rem 0.5rem 0 0.5rem;
+    background: var(--laranja);
+    width: max-content;
+
+    color: var(--branco);
+    font-size: 0.875rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 1.3125rem;
+}
