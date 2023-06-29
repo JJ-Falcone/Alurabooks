@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>  
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="icones__esquerda">
             <input type="checkbox" id="menu" class="menu__hamburguer__botao">
-            <label for="menu" class="menu__hamburguer__cor">
+            <label for="menu">
                 <span class="menu__hamburguer"></span>
             </label>
+            <span class="azul"></span>
             <ul class="lista__menu">
                 <li class="lista__menu__titulo">Categorias</li>
                 <li class="lista__menu__item"><a href="#" class="lista__menu__link">Programação</a></li>
@@ -31,5 +33,126 @@
         </div>
     </header>
     
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h1>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <div class="div__pesquisa">
+            <img src="img/Pesquisa.svg" alt="Lupa">
+            <input type="search" class="banner__pesquisa__texto" placeholder="Qual será sua próxima leitura?">
+        </div>
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+
+                <!-- Slider main container -->
+        <div class="swiper">
+
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka"> </div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"> </div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre JavaScript"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade web"></div>
+            
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card__div">
+            <div class="card__esquerda">
+                <h3 class="card__chamada">Talvez você também se interesse por...</h3>
+                <h2 class="card__titulo">Angular 11 e Firebase</h2>
+                <p class="card__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <div class="card__div__icones">
+                    <a href="#"><img src="img/Favoritos.svg" alt="Favoritar"></a>
+                    <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras"></a>
+                </div>
+            </div>
+            <div class="card__direita">
+                <img src="img/Perfil-escritora 2.svg" alt="Logo Angular">
+                <a href="#" class="saiba-mais">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">MAIS VENDIDOS</h2>
+
+                <!-- Slider main container -->
+        <div class="swiper">
+
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade web"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre JavaScript"></div>
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka"> </div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"> </div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+            
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="card__div">
+            <div class="card__esquerda">
+                <div class="card__esquerda2">
+                    <img class="nota" src="img/Estrelinhas.svg" alt="Nota da autora, 5 estrelas">
+                    <h3 class="card__chamada">Autora do Mês</h3>
+                    <h2 class="card__titulo">Juliana Agarikov</h2>
+                    <p class="card__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <div class="card__div__icones">
+                    <a href="#"><img src="img/Favoritos.svg" alt="Favoritar"></a>
+                    <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras"></a>
+                </div>
+
+            </div>
+            <div class="card__direita">
+                <img src="img/Perfil-escritora 1.png" alt="Foto da Juliana Agarikov sorrindo">
+                <a href="#" class="saiba-mais">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 20,
+        centeredSlides: true,
+        slidesPerView: 2,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
+        });
+    </script>
 </body>
 </html>
