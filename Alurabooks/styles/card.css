@@ -96,10 +96,10 @@
     }
     
     .card__div{
-        padding-top: 1.44rem;
         max-width: 36.25rem;
         justify-content: space-between;
-        gap: 15%
+        gap: 15%;
+        padding: 1.44rem 1.42rem 1.5rem 1rem;
     }
 
     .card__esquerda{
@@ -108,7 +108,7 @@
     }
 
     .card__direita {
-        width: 10.5rem;
+        width: auto;
         align-items: center;
     }
     
@@ -138,10 +138,30 @@
         width: 50%;
         display: flex;
         align-items: center;
-        margin: 0;
+        margin: 3rem 0 0 0;
     }
 
     .card__div{
-        max-height: 17.375rem;
+        height: 15.375rem;
+        gap: 0;
+    }
+
+    .card__chamada{
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    .card__esquerda{
+        gap: 0;
+    }
+
+    .card__texto{
+        max-width: 20rem;
+    }
+
+    .foto__angular{
+        margin-top: 0;
+        width: 9.5rem;
+        height: 10rem;
     }
 }

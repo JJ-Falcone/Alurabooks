@@ -14,6 +14,9 @@
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     font-family: 'Poppins';
     overflow-x: hidden;
+
+    --swiper-theme-color: #fff;
+    --swiper-navigation-size: 0.75rem
 }
 
 body{
