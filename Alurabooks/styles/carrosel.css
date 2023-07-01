@@ -16,6 +16,9 @@
     margin-top: 17.5px
 }
 
+.swiper-pagination-bullet-active{
+    background: var(--azul-degrade);
+}
 
 
 .carrosel__titulo{
