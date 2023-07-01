@@ -1,11 +1,16 @@
 .div__topicos{
     padding: 1rem 0;
     background: var(--branco);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .topicos{
     background: var(--azul-degrade);
     padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topicos__titulo{
@@ -24,7 +29,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-
+    max-width: 56.25rem;
 }
 
 .topicos__item{
@@ -38,4 +43,34 @@
     font-family: 'Poppins';
     font-weight: 700;
     line-height: 1.3125rem;
+}
+
+@media (min-width: 1025px) {
+     .div__topicos{
+        padding-top: 0;
+        padding-bottom: 1.87rem
+    }
+
+    .topicos{
+        padding: 2rem 7rem;
+    }
+
+    .topicos__titulo{
+        line-height: 2.25rem;
+        font-size: 1.5rem;
+    }
+
+    .topicos__item{
+        margin: 1.5rem 0.75rem 0 0.75rem;
+        padding: 1.5rem 2rem;
+
+        line-height: 2.25rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1729px){
+    .div__topicos{
+        padding-bottom: 4rem;
+    }
 }

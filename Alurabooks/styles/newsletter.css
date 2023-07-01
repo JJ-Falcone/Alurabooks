@@ -1,6 +1,26 @@
 .newsletter{
     background: var(--branco);
     padding: 0 1.5rem 1.88rem 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter__corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 48.375rem;
+}
+
+.newsletter__esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 23.6rem;
 }
 
 .newsletter__titulo{
@@ -8,7 +28,6 @@
     font-size: 1.125rem;
     font-family: 'Poppins';
     font-weight: 500;
-    margin-bottom: 0.5rem;
 }
 
 .newsletter__texto{
@@ -16,14 +35,14 @@
     font-size: 1rem;
     font-family: 'Poppins';
     font-weight: 300;
-    margin-bottom: 1.5rem;
 }
 
 .newsletter__cadastro{
-    
+    max-width: 23.75rem;
     background: var(--azul-degrade);
     border-radius: 24px;
-    padding: 1px
+    padding: 1px;
+    width: 100%;
 }
 
 .newsletter__cor{
@@ -38,4 +57,41 @@
 .newsletter__input::placeholder{
     line-height: 1.5rem;
     color: var(--azul-degrade);
+}
+
+@media (min-width: 1025px) {
+    .newsletter__corpo{
+        padding: 0 9.31rem 3.31rem 9.31rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center ;
+    }
+
+    .newsletter__esquerda{
+        max-width: 22.5rem;
+        gap: 1.19rem;
+    }
+
+    .newsletter__titulo{
+        font-size: 1.5rem;
+        line-height: 2.0625rem;
+    }
+
+    .newsletter__cadastro{
+        width: 20.5rem;
+    }
+
+    .newsletter__cadastro{
+        height: 2.775rem;
+    }
+}
+
+@media (min-width: 1729px) {
+    .newsletter__esquerda{
+        max-width: 25rem;
+    }
+
+    .newsletter__texto{
+        max-width: 21rem;
+    }
 }

@@ -1,11 +1,13 @@
 header{
-    padding: 1.12rem 1.5rem 1.12rem 1rem;
+    padding: 1.12rem 5.5% 1.12rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     background: var(--branco);
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .icones__esquerda{
@@ -105,4 +107,143 @@ header a img{
     
     opacity: 1;
     transition: 0.5s;
+}
+
+
+@media (min-width: 1025px) {
+    header{
+        padding: 1.12rem 5rem;
+    }
+    
+    .icones__esquerda{
+        gap: 0.69rem;
+        align-items: end;
+    }
+
+    .icones__esquerda label{
+        display: none;
+    }
+
+   .menu__hamburguer{
+    display: none;
+   }
+
+   .menu__hamburguer__botao{
+    display: none;
+   }
+
+   .logo__nome{
+    color: #000;
+    font-size: 1.875rem;
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    line-height: 1.875rem;
+   }
+
+   .logo__nome span{
+    font-weight: 700;
+   }
+
+   .icones__direita{
+    gap: 3.2rem;
+   }
+
+   .coracao{
+    display: none;
+   }
+
+   nav{
+    display: flex;
+    gap: 2.62rem
+   }
+
+   nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    line-height: 1.5rem;
+   }
+
+   .categorias__centraliza{
+        display: flex;
+        align-items: center;
+   }
+
+   .categorias__botao{
+    text-align: center;
+    z-index: 10;
+   }
+
+   .categorias__botao:hover{
+    cursor: pointer;
+   }
+
+   .lista__categorias{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background: var(--branco);
+    top: 75%;
+    margin-left: -0.75rem;
+   }
+   
+   .categorias__item:hover{
+    background: var(--azul-degrade);
+   }
+
+   .categorias__item:hover .categorias__link{
+    -webkit-text-fill-color: var(--branco)
+   }
+
+   .categorias__input:hover ~ * .categorias__botao{
+    color: var(--branco);
+   }
+
+   .categorias__input:hover ~  * .lista__categorias{
+    opacity: 100;
+    pointer-events: all;
+   }
+
+   .categorias__input:hover ~ * .azul2{
+    background: var(--azul-degrade);
+   }
+
+   .azul2{
+    width: 7.5rem;
+    height: 2.75rem;
+    position: absolute;
+    margin-left: -0.75rem;
+   }
+
+   .categorias__primeiro{
+    padding-top: 1.5rem;
+   }
+
+}
+
+@media (min-width: 1729px) {
+    header{
+        justify-content: left;
+    }
+
+    .icones__esquerda{
+        margin-right: 1.3rem;
+    }
+
+    nav{
+        margin-right: 32rem;
+    }
+
+    .carinho__perfil{
+        display: flex;
+        align-items: center;
+    }
+
+    .carinho__perfil h2{
+        color: #000;
+        font-size: 1.25rem;
+        font-family: 'Poppins';
+        line-height: 1.875rem;
+    }
 }

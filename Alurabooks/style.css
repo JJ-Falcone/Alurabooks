@@ -5,7 +5,7 @@
 @import url("styles/topicos.css");
 @import url("styles/newsletter.css");
 @import url("styles/footer.css");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
 
 :root{
     --cor-de-fundo: #EBECEE;
@@ -13,8 +13,42 @@
     --laranja: #EB9B00;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     font-family: 'Poppins';
+    overflow-x: hidden;
 }
 
 body{
     background-color: var(--cor-de-fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.carrosel__card{
+        width: 100%;
+}
+
+@media (max-width: 1025px) {
+    
+    .tablet{
+        display: none;
+    }
+}
+
+@media (max-width: 1729px) {
+    .pc{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1729px) {
+    .carrosel__card{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        height: 31.625rem;
+        padding: 0 10.5rem;
+    }
 }

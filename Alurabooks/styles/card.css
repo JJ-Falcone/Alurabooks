@@ -1,15 +1,15 @@
 .card{
-    margin-top: 1.25rem;
-    margin-bottom: 1rem;
+    margin: 1.25rem 5.5% 1rem 5.5%;
     display: flex;
     justify-content: center;
+
 }
 
 .card__div{
     display: flex;
     gap: 0.5rem;
     padding: 1rem 1rem 1.5rem 1rem;
-    width: 21.75rem;
+    max-width: 21.75rem;
     background: var(--branco);
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -56,10 +56,15 @@
     width: 48%;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem
+    justify-content: space-between;
 }
 
-.card__direita img{
+.foto__angular{
+    margin-top: 0.35rem;
+    width: 100%;
+}
+
+.foto__mulher{
     margin-top: 0.35rem;
     width: 100%;
 }
@@ -72,12 +77,71 @@
     font-weight: 700;
     text-decoration: none;
     line-height: 2rem;
-
+    width: 100%;
     background: var(--laranja);
     padding: 0.5rem 1rem;
+
+    box-sizing: border-box;
 }
 
 .nota{
     margin-top: 0.45rem;
     width: 5.6875rem;
+}
+
+@media (min-width: 1025px){
+    .card{
+        margin-top: 3.84rem;
+        margin-bottom: 3rem;
+    }
+    
+    .card__div{
+        padding-top: 1.44rem;
+        max-width: 36.25rem;
+        justify-content: space-between;
+        gap: 15%
+    }
+
+    .card__esquerda{
+        width: auto;
+        gap: 4rem;
+    }
+
+    .card__direita {
+        width: 10.5rem;
+        align-items: center;
+    }
+    
+    .foto__angular{
+        margin-top: 0;
+        width: 9rem;
+        height: 9.5rem;
+    }
+
+    .card__div__icones img{
+        width: 2.5rem;
+    }
+
+    .card__texto{
+        width: auto;
+        font-size: 1rem;
+    }
+
+
+    .foto__mulher{
+        width: 10.3rem;
+    }
+}
+
+@media (min-width: 1729px){
+    .card{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card__div{
+        max-height: 17.375rem;
+    }
 }
